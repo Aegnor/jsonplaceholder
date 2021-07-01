@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    padding: 14rem 0;
+}
+
+table {
+    border-spacing: 0;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container {
+    max-width: 733px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.table {
+    margin: 0 auto;
+    border: 1px solid #c5c5c5;
+    border-bottom: 0;
+    width: 100%;
+    max-width: 733px;
+}
+
+.table-wrapper {
+    overflow: auto;
+}
+
+.table th {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    text-align: left;
+    cursor: pointer;
+}
+
+.table th:first-child {
+    border-left: 0;
+}
+
+.table .table-actions {
+    padding: 1rem 1.5rem;
+}
+
+.table td {
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+}
+
+.table td:first-child {
+    border-left: 0;
+}
+
+.table td:last-child {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #000;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+
+input:focus {
+    outline: 1px solid #000;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.form {
+    margin: 5rem auto;
+}
+
+.form fieldset {
+    margin-bottom: 2rem;
+    border: 0;
+}
+
+.form .form-last-child {
+    margin-bottom: 1rem;
+}
+
+.user-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 3rem 0;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 0.7rem #000;
+    display: none;
+}
+
+.close-modal {
+    font-size: 1.2rem;
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.user-modal.modal-open {
+    display: block;
+    padding: 4rem;
+}
+
+.user-modal h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+address {
+    font-style: normal;
+}
+
+p {
+    margin-bottom: 1.3rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 5rem 0;
+    }
+
+    .user-modal.modal-open {
+        display: block;
+        padding: 1rem;
+    }
+
+    .user-modal {
+        width: 90%;
+    }
+}
