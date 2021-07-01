@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+    <h1 class="visually-hidden">Users Table</h1>
+    <div class="table-wrapper">
+        <table id="user-table" class="table">
+            <caption class="visually-hidden">Table of users</caption>
+            <thead>
+            <tr>
+                <th data-column="1">Name</th>
+                <th data-column="2">Username</th>
+                <th data-column="3">Email</th>
+                <th data-column="4">Website</th>
+                <th class="table-actions">Actions</th>
+            </tr>
+            </thead>
+            <tbody id="user-table-body"></tbody>
+        </table>
+    </div>
+    <h2 class="visually-hidden">Add new user</h2>
+    <form id="user-form" class="form">
+        <fieldset>
+            <legend>Your Contact</legend>
+            <div class="field">
+                <label for="fullname">Your full name*</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Leanne Graham">
+            </div>
+            <div class="field">
+                <label for="nickname">Your nickname*</label>
+                <input type="text" name="nickname" id="nickname" placeholder="Bret">
+            </div>
+            <div class="field">
+                <label for="email">Your email*</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            </div>
+            <div class="field">
+                <label for="website">Your website URL*</label>
+                <input type="text" name="website" id="website" placeholder="hildegard.org">
+            </div>
+            <div class="field">
+                <label for="phone">Your phone number</label>
+                <input type="text" name="phone" id="phone" placeholder="024-648-3804">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Your Address</legend>
+            <div class="field">
+                <label for="street">Street name</label>
+                <input type="text" name="street" id="street" placeholder="Kulas Light">
+            </div>
+            <div class="field">
+                <label for="suite">Suite name</label>
+                <input type="text" name="suite" id="suite" placeholder="Suite 198">
+            </div>
+            <div class="field">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="London">
+            </div>
+            <div class="field">
+                <label for="zipcode">Zipcode</label>
+                <input type="text" name="zipcode" id="zipcode" placeholder="31428-2261">
+            </div>
+        </fieldset>
+        <fieldset class="form-last-child">
+            <legend>Company</legend>
+            <div class="field">
+                <label for="company-name">Company name</label>
+                <input type="text" name="companyName" id="company-name" placeholder="Kulas Light">
+            </div>
+            <div class="field">
+                <label for="catch-phrase">Company catch phrase</label>
+                <input type="text" name="catchPhrase" id="catch-phrase" placeholder="Suite 198">
+            </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="user-modal" class="user-modal"></div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
